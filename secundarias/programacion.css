@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding-top: 70px;
+    font-family: 'Poppins', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*Aqui es donde es la barra de menu donde se ve los temas que hay para mejor organizacion */
+.menu{
+    background:#DBCFB8;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    position: fixed; 
+    top: 0;          
+    left: 0;        
+    width: 100%;     
+    z-index: 2000;
+}
+
+.derecha1{
+    margin-left: 600px;
+    display:inline;
+}
+
+li{
+    display:inline;
+}
+
+a{
+    color:#916738;
+    font-family:'Bebas Neue',sans-serif;
+    font-size:25px;
+    text-decoration:none;
+    margin:20px;
+}
+/*TITULO*/
+.titulo{
+    background: #d7cfc7;
+    color: #916738;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+/*PYTHON*/
+.python{
+    background: #a5a58d;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgpython img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textopython {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003049;;
+}
+
+/*HTML*/
+.html{
+    background: #6d6875;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imghtml img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textohtml {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003049;;
+}
+
+/*CSS*/
+.css{
+    background: #b08968;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgcss img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textocss {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003049;;
+}
+
+/*JAVAL*/
+.java{
+    background: #81b29a;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgjava img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textojava {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003049;
+}
+
+/*C++*/
+.c{
+    background: #6c757d;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgc img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoc {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2b2d42;
+}
+/*JS*/
+.js{
+    background: #708d81;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgjs img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textojs {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2b2d42;
+}

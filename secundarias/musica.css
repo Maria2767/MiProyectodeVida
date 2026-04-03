@@ -1,0 +1,494 @@
+body{
+    margin: 0;
+    padding-top: 70px;
+    font-family: 'Poppins', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*Aqui es donde es la barra de menu donde se ve los temas que hay para mejor organizacion */
+.menu{
+    background:#DBCFB8;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    position: fixed; 
+    top: 0;          
+    left: 0;        
+    width: 100%;     
+    z-index: 2000;
+}
+
+.derecha1{
+    margin-left: 600px;
+    display:inline;
+}
+
+li{
+    display:inline;
+}
+
+a{
+    color:#916738;
+    font-family:'Bebas Neue',sans-serif;
+    font-size:25px;
+    text-decoration:none;
+    margin:20px;
+}
+/*TITULO*/
+.titulo{
+    background: #d7cfc7;
+    color: #916738;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+/*ADO*/
+.ado{
+    background: #0B1E3B;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgado img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoado {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d7cfc7;
+}
+/*VIDEOS ADO*/
+.iframesado {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+    background-color: #d7cfc7;
+}
+
+.iframeado p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+/*EVE*/
+.eve{
+    background: #1F3A4D;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgeve img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoeve {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d7cfc7;
+}
+/*VIDEOS EVE*/
+.iframeseve {
+    background-color: #d7cfc7;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.iframeseve p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+/*TUYU*/
+.tuyu{
+    background: #669bbc;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgetuyu img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textotuyu {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003049;
+}
+
+/*VIDEOS TUYU*/
+.iframetuyu {
+    background-color: #d7cfc7;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.iframetuyu p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+/*YOASOBI*/
+.yoasobi{
+    background: #b86b6b;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgyoasobi img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoyoasobi {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2b2d42;
+}
+
+/*VIDEOS YOASOBI*/
+.iframeyoasobi {
+    background-color: #d7cfc7;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.iframeyoasobi p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+/*ZUTOMAYO*/
+.zutomayo{
+    background: #44436f;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgzutomayo img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textozutomayo {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d7cfc7;
+}
+
+/*VIDEOS ZUTOMAYO*/
+.iframezutomayo {
+    background-color: #d7cfc7;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.iframezutomayo p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+.menu{
+    background:#DBCFB8;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    position: fixed; 
+    top: 0;          
+    left: 0;        
+    width: 100%;     
+    z-index: 2000;
+}
+
+.derecha1{
+    margin-left: 600px;
+    display:inline;
+}
+
+li{
+    display:inline;
+}
+
+a{
+    color:#916738;
+    font-family:'Bebas Neue',sans-serif;
+    font-size:25px;
+    text-decoration:none;
+    margin:20px;
+}
+
+.titulo{
+    background: #d7cfc7;
+    color: #916738;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.ado{
+    background: #0B1E3B;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgado img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoado {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d7cfc7;
+}
+
+.iframesado {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+    background-color: #d7cfc7;
+}
+
+.iframesado p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.eve{
+    background: #1F3A4D;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgeve img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoeve {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d7cfc7;
+}
+
+.iframeseve {
+    background-color: #d7cfc7;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.iframeseve p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+
+.tuyu{
+    background: #669bbc;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgetuyu img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textotuyu {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003049;
+}
+
+.iframetuyu {
+    background-color: #d7cfc7;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.iframetuyu p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+
+.yoasobi{
+    background: #b86b6b;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgyoasobi img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoyoasobi {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2b2d42;
+}
+
+.iframeyoasobi {
+    background-color: #d7cfc7;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.iframeyoasobi p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+
+.zutomayo{
+    background: #44436f;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgzutomayo img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textozutomayo {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #d7cfc7;
+}
+
+.iframezutomayo {
+    background-color: #d7cfc7;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.iframezutomayo p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+

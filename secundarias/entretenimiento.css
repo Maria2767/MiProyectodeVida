@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding-top: 70px;
+    font-family: 'Poppins', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*Aqui es donde es la barra de menu donde se ve los temas que hay para mejor organizacion */
+.menu{
+    background:#DBCFB8;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    position: fixed; 
+    top: 0;          
+    left: 0;        
+    width: 100%;     
+    z-index: 2000;
+}
+
+.derecha1{
+    margin-left: 600px;
+    display:inline;
+}
+
+li{
+    display:inline;
+}
+
+a{
+    color:#916738;
+    font-size:25px;
+    text-decoration:none;
+    margin:20px;
+}
+/*TITULO*/
+.titulo{
+    background: #d7cfc7;
+    color: #916738;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+/*ANIME*/
+.anime{
+    background:  #bf4342;;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imganime img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoanime {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #e7d7c1;
+}
+/*VIDEOS ANIME*/
+.iframeanime {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+    background-color: #d7cfc7;
+}
+
+.iframeanime p{
+    margin-right: 160px;
+    font-size: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
