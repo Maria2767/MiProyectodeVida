@@ -334,3 +334,86 @@ a{
     font-size: 24px;
     color: #2b2d42;
 }
+/* Aqui empieza el codigo para que la pagina de dibujo sea responsiva */
+@media (max-width: 1024px) {
+    /* Ajustamos el menu para que no se amontone */
+    .menu {
+        height: auto !important;
+        flex-direction: column !important;
+        padding: 10px 0 !important;
+        gap: 5px !important;
+    }
+
+    .menu ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .derecha1, .derecha2 {
+        margin-left: 0 !important;
+    }
+
+    a {
+        font-size: 18px !important;
+        margin: 5px 10px !important;
+    }
+
+    /* Las secciones de cada tipo de dibujo (Abstracto, Lapiz, etc) */
+    .abstracto, .simplificado, .arquitecto, .infantil, .lapiz {
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    /* Ajuste para las imagenes de los dibujos */
+    .banner-imgabstracto img, 
+    .banner-imgsimplificado img, 
+    .banner-imgarquitecto img, 
+    .banner-imginfantil img, 
+    .banner-imglapiz img {
+        width: 100% !important;
+        max-width: 400px; /* para que no se vean gigantes en tablets */
+        height: auto !important;
+        margin-top: 10px !important;
+    }
+
+    /* Ajuste para los textos de los dibujos */
+    .banner-textoabstracto, 
+    .banner-textosimplificado, 
+    .banner-textoarquitecto, 
+    .banner-textoinfantil, 
+    .banner-textolapiz {
+        width: 100% !important;
+        margin-left: 0 !important;
+        font-size: 18px !important;
+        padding-top: 20px;
+    }
+
+    .banner-textoabstracto p, 
+    .banner-textosimplificado p, 
+    .banner-textoarquitecto p, 
+    .banner-textoinfantil p, 
+    .banner-textolapiz p {
+        text-align: justify; /* se ve mas ordenado en el cel */
+    }
+
+    .titulo h1 {
+        font-size: 18px !important;
+    }
+}
+
+/* Ajustes finales para telefonos muy pequeños */
+@media (max-width: 480px) {
+    a {
+        font-size: 15px !important;
+    }
+    
+    .titulo h1 {
+        font-size: 16px !important;
+    }
+}
+
