@@ -90,3 +90,82 @@ iframe {
     object-fit: cover; 
     border-radius: 10px; 
 }
+/* Acqui va para el teleofno de la pajina de animes y bideos */
+@media (max-width: 1024px) {
+    /* para que el menu no se mire todo amontonado */
+    .menu {
+        height: auto !important;
+        padding: 15px 0 !important;
+        gap: 10px !important;
+    }
+
+    .menu ul {
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    a {
+        font-size: 18px !important;
+        margin: 10px !important;
+    }
+
+    /* la seccion principal de anime una de bajo de otra */
+    .anime {
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .banner-imganime img {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 20px !important;
+    }
+
+    .banner-textoanime {
+        width: 100% !important;
+        margin-left: 0 !important;
+        font-size: 18px !important;
+    }
+
+    /* aqui es para que los bideos se miren uno por uno y no dos */
+    .iframeanime {
+        grid-template-columns: 1fr !important; /* solo una columna pal cel */
+        padding: 10px !important;
+    }
+
+    /* para que el bideo de youtube ocupe todo el ancho */
+    iframe {
+        width: 100% !important;
+        height: 250px !important; /* mas chiquito de alto para que no tape todo */
+    }
+
+    .iframeanime p {
+        margin-right: 0 !important; /* quitamos el espacio de la derecha */
+        font-size: 16px !important;
+        text-align: justify;
+    }
+
+    .iframeanime h3 {
+        font-size: 20px !important;
+        text-align: center;
+    }
+
+    .titulo h1 {
+        font-size: 20px !important;
+    }
+}
+
+/* para los teleofnos mas chiquititos */
+@media (max-width: 480px) {
+    iframe {
+        height: 200px !important;
+    }
+    
+    .titulo {
+        padding: 10px !important;
+    }
+}
+
