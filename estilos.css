@@ -925,3 +925,129 @@ tbody tr:hover {
     margin-top: 15px;
     font-size: 20px;
 }
+
+/* ==========================================
+   VERSION PARA CELULARES (RESPONSIVE)
+   ========================================== */
+
+@media (max-width: 1024px) {
+    /* Ajustes Generales de Secciones */
+    .banner, .logografia, .caracteristica, .formacion, .reglas, 
+    .identidad, .proposito, .conclusion, .seccionfodafinal {
+        flex-direction: column !important; /* Todo hacia abajo */
+        padding: 40px 20px !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .banner-texto, .banner-texto2, .bannertexto3, .banner-textoformacion, 
+    .banner-textoreglas, .banner-textoidentidad, .bannertextoproposito, 
+    .banner-textoconclusion, .info {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    /* Ajuste de Imágenes */
+    .banner-img img, .banner-img2 img, .bannerimg3 img, 
+    .banner-imgformacion img, .banner-imgreglas img, 
+    .header-img img, .banner-imgidentidad img, 
+    .bannerimgproposito img, .banner-imgconclusion img {
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0 !important;
+        margin-top: 20px;
+    }
+
+    /* Ajuste del FODA */
+    .fodacuerpolista {
+        padding: 20px !important;
+    }
+    .fodafila {
+        flex-direction: column !important;
+        border-left-width: 15px !important; /* Más delgado para cel */
+        padding: 20px !important;
+    }
+    .fodaimagenpeque {
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0 !important;
+        margin-top: 15px;
+    }
+
+    /* Tarjetas de Favoritos */
+    .contenedor-tarjetas {
+        flex-direction: column !important;
+        padding: 10px;
+    }
+    .encabezado-comida, .encabezado-lugares {
+        padding: 80px 20px !important;
+    }
+
+    /* Sección de Gustos (La Galería) */
+    .contenedor {
+        flex-direction: column !important;
+        width: 95%;
+    }
+    .galeria {
+        width: 100% !important;
+        grid-template-columns: repeat(3, 1fr) !important; /* 3 fotos por fila */
+    }
+    .cards {
+        grid-template-columns: 1fr !important; /* Cards de una en una */
+    }
+
+    /* Tabla de Valores */
+    table {
+        font-size: 14px !important; /* Letra más pequeña para que quepa */
+        width: 100% !important;
+    }
+    th, td {
+        padding: 8px !important;
+    }
+
+    /* Línea de Tiempo */
+    .tiempo .contenedor {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .tiempo .bloque {
+        width: 100% !important;
+    }
+
+    /* Cuadrantes Mandala */
+    .mandalagrid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* SMART */
+    .smartrow {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .smartcircle {
+        width: 100px !important;
+        height: 100px !important;
+        font-size: 40px !important;
+    }
+    .smartbox {
+        padding: 15px !important;
+    }
+
+    /* Hero Principal */
+    .contenido-hero h1 {
+        font-size: 1.8rem !important;
+    }
+    .frase-principal {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Ajuste extra para pantallas muy pequeñas (iPhone/Android chicos) */
+@media (max-width: 480px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    a {
+        font-size: 16px !important;
+    }
+}
