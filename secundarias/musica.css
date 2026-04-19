@@ -491,4 +491,87 @@ iframe {
     margin-right: 160px;
     font-size: 20px;
 }
+/* Acqui va para que la pajina de musica se mire bien en el cel */
+@media (max-width: 1024px) {
+    /* arreglamos el menu para que no se salga */
+    .menu {
+        height: auto !important;
+        flex-direction: column !important;
+        padding: 15px 0 !important;
+        gap: 5px !important;
+    }
 
+    .derecha1, .derecha2 {
+        margin-left: 0 !important;
+        display: block !important;
+    }
+
+    .menu ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+
+    a {
+        font-size: 16px !important;
+        margin: 5px !important;
+    }
+
+    /* las seciones de cada artista una de bajo de otra */
+    .ado, .eve, .tuyu, .yoasobi, .zutomayo {
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .banner-imgado img, 
+    .banner-imgeve img, 
+    .banner-imgetuyu img, 
+    .banner-imgyoasobi img, 
+    .banner-imgzutomayo img {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 10px !important;
+    }
+
+    .banner-textoado, 
+    .banner-textoeve, 
+    .banner-textotuyu, 
+    .banner-textoyoasobi, 
+    .banner-textozutomayo {
+        width: 100% !important;
+        margin-left: 0 !important;
+        font-size: 18px !important;
+        padding-top: 20px;
+    }
+
+    /* para que los bideos de youtube se miren uno por uno */
+    .iframesado, .iframeseve, .iframetuyu, .iframeyoasobi, .iframezutomayo {
+        grid-template-columns: 1fr !important;
+        padding: 15px !important;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: 250px !important; /* mas bajito para que quepa en la pantalla */
+    }
+
+    .iframesado p, .iframeseve p, .iframetuyu p, .iframeyoasobi p, .iframezutomayo p {
+        margin-right: 0 !important;
+        font-size: 16px !important;
+        text-align: justify;
+    }
+
+    .titulo h1 {
+        font-size: 20px !important;
+    }
+}
+
+/* para pantallas muy chiquitas */
+@media (max-width: 480px) {
+    iframe {
+        height: 180px !important;
+    }
+}
