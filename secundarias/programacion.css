@@ -190,3 +190,84 @@ a{
     font-size: 24px;
     color: #2b2d42;
 }
+/* Acqui va para que la pajina de lenguajes se mire bien en el cel */
+@media (max-width: 1024px) {
+    /* Arreglamos el menu para que no se amontonen los lenguajes */
+    .menu {
+        height: auto !important;
+        flex-direction: column !important;
+        padding: 10px 0 !important;
+        gap: 5px !important;
+    }
+
+    .menu ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .derecha1, .derecha2 {
+        margin-left: 0 !important;
+    }
+
+    a {
+        font-size: 16px !important;
+        margin: 5px 10px !important;
+    }
+
+    /* Todas las secciones de lenguajes se ponen una de bajo de otra */
+    .python, .html, .css, .java, .c, .js {
+        flex-direction: column !important;
+        padding: 30px 15px !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    /* Las imajenes de los logos de programacion */
+    .banner-imgpython img, 
+    .banner-imghtml img, 
+    .banner-imgcss img, 
+    .banner-imgjava img, 
+    .banner-imgc img, 
+    .banner-imgjs img {
+        width: 80% !important; /* un poco mas pequeñas para que no ocupen todo */
+        height: auto !important;
+        margin-top: 20px !important;
+    }
+
+    /* Los parrafos de informacion */
+    .banner-textopython, 
+    .banner-textohtml, 
+    .banner-textocss, 
+    .banner-textojava, 
+    .banner-textoc, 
+    .banner-textojs {
+        width: 100% !important;
+        margin-left: 0 !important;
+        font-size: 18px !important;
+        padding: 10px !important;
+    }
+
+    .banner-textopython p, 
+    .banner-textohtml p, 
+    .banner-textocss p, 
+    .banner-textojava p, 
+    .banner-textoc p, 
+    .banner-textojs p {
+        text-align: justify; /* para que se mire ordenado el texto */
+    }
+
+    .titulo h1 {
+        font-size: 18px !important;
+        padding: 10px !important;
+    }
+}
+
+/* para que en cel mas peqeños no se mire tan grande el titulo */
+@media (max-width: 480px) {
+    .titulo h1 {
+        font-size: 16px !important;
+    }
+}
