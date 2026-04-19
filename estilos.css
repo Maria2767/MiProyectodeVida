@@ -1014,8 +1014,22 @@ tbody tr:hover {
         align-items: center;
     }
 
+    /* aqui arregle lo de los cuadros verdes y cafes para que no esten tan altos */
     .tiempo .bloque {
         width: 100% !important;
+        height: auto !important; /* esto ase que se ajuste al testo */
+        min-height: 100px !important; /* para que no se mire apachado */
+        padding: 20px !important; /* espacio por dentro */
+        margin-bottom: 25px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    /* para que los circulos de la linea de tiempo queden bien */
+    .tiempo .circulo {
+        margin-bottom: -10px !important;
+        z-index: 2;
     }
 
     /* los cuadrantes de mandala bien puestos */
