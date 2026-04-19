@@ -166,3 +166,171 @@ a{
     font-size: 24px;
     color: #2b2d42;
 }
+body{
+    margin: 0;
+    padding-top: 70px;
+    font-family: 'Poppins', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*Aqui es donde es la barra de menu donde se ve los temas que hay para mejor organizacion */
+.menu{
+    background:#DBCFB8;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    position: fixed; 
+    top: 0;          
+    left: 0;        
+    width: 100%;     
+    z-index: 2000;
+}
+
+.derecha1{
+    margin-left: 600px;
+    display:inline;
+}
+
+li{
+    display:inline;
+}
+
+a{
+    color:#916738;
+    font-size:25px;
+    text-decoration:none;
+    margin:20px;
+}
+/*TITULO*/
+.titulo{
+    background: #d7cfc7;
+    color: #916738;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+/*ABTRACTO*/
+.abstracto{
+    background: #a5a58d;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgabstracto img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoabstracto {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003049;;
+}
+
+/*SIMPLIFICADO*/
+.simplificado{
+    background: #6d6875;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgsimplificado img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textosimplificado {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003049;;
+}
+
+/*ARQUITECTO*/
+.arquitecto{
+    background: #b08968;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imgarquitecto img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoarquitecto {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003049;;
+}
+
+/*INFANTIL*/
+.infantil{
+    background: #81b29a;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imginfantil img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textoinfantil {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #003049;
+}
+
+/*LAPIZ*/
+.lapiz{
+    background: #6c757d;
+    display: flex;
+    padding: 100px;
+    align-items: flex-start; 
+}
+
+.banner-imglapiz img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 90px; 
+}
+
+.banner-textolapiz {
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #2b2d42;
+}
