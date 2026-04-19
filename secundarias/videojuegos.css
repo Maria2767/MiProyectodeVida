@@ -135,3 +135,81 @@ iframe {
     object-fit: cover; 
     border-radius: 10px; 
 }
+/* Para que la seccion de videojuegos se mire bien en el cel */
+@media (max-width: 1024px) {
+    /* Arreglamos el menu */
+    .menu {
+        height: auto !important;
+        flex-direction: column !important;
+        padding: 15px 0 !important;
+        gap: 5px !important;
+    }
+
+    .derecha1, .derecha2 {
+        margin-left: 0 !important;
+        display: block !important;
+    }
+
+    .menu ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+
+    a {
+        font-size: 16px !important;
+        margin: 5px !important;
+    }
+
+    /* Las secciones de Indie y Mobile una de bajo de otra */
+    .indie, .mobile {
+        flex-direction: column !important;
+        padding: 40px 20px !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .banner-imgindie img, .banner-imgmobile img {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 10px !important;
+    }
+
+    .banner-textoindie, .banner-textomobile {
+        width: 100% !important;
+        margin-left: 0 !important;
+        font-size: 18px !important;
+        padding-top: 20px;
+    }
+
+    /* Aqui es lo mas importante: los videos en una sola columna */
+    .iframeindie, .iframemobile {
+        grid-template-columns: 1fr !important; /* De dos a uno por fila */
+        padding: 15px !important;
+        gap: 30px !important; /* Mas espacio entre cada juego */
+    }
+
+    iframe {
+        width: 100% !important;
+        height: 250px !important; /* Ajustamos la altura para el cel */
+    }
+
+    .iframeindie p, .iframemobile p {
+        margin-right: 0 !important;
+        font-size: 16px !important;
+        text-align: justify;
+        display: block !important; /* Cambiamos el flex que tenias para que fluya mejor */
+    }
+
+    .titulo h1 {
+        font-size: 20px !important;
+    }
+}
+
+/* Para pantallas de telefonos muy chiquitos */
+@media (max-width: 480px) {
+    iframe {
+        height: 180px !important;
+    }
+}
